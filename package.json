@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --hot"
   },
-  "author": "Gowtham",
+  "author": "Itz Friday",
   "license": "ISC",
   "dependencies": {
     "react": "^0.14.7",
