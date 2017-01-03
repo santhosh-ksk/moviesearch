@@ -3,7 +3,7 @@ import AppBar from 'material-ui/AppBar';
 
 
 
-const TitleBar = () => (
+const TitleBar = () =>(
   <AppBar
     title="MovieFinder"
   />
