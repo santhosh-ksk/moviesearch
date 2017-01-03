@@ -1,12 +1,10 @@
 import React from 'react';
 import AppBar from 'material-ui/AppBar';
 
-
-
-const TitleBar = () =>(
-  <AppBar
-    title="MovieFinder"
-  />
-);
-
-export default TitleBar;
+export default class TitleBar extends React.Component {
+  render() {
+   return (
+     <AppBar title="MovieFinder" />
+   );
+  }
+}
