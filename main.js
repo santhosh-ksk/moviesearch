@@ -4,6 +4,7 @@ import TitleBar from './app/Header.jsx';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import SearchBar from './app/Search.jsx';
 
+
 const App = () => (
   <MuiThemeProvider>
   <div>
