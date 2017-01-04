@@ -3,20 +3,21 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --hot"
+    "start": "webpack-dev-server --hot --host 0.0.0.0",
+    "test": "gulp"
   },
   "eslintConfig": {
-        "plugins": ["example"],
         "env": {
-            "example/custom": true
+            "node": true,
+            "es6": true
         }
   },
   "author": "Gowtham",
   "license": "ISC",
   "dependencies": {
     "gulp-install": "^0.6.0",
-    "react": "^0.14.7",
-    "react-dom": "^0.14.7",
+    "react": "~15.4.1",
+    "react-dom": "~15.4.1",
     "react-router": "^2.0.0",
     "react-superagent": "^1.1.1",
     "superagent": "^3.3.1",
