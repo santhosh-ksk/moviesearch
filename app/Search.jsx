@@ -3,7 +3,6 @@ import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
 import ajax from 'superagent';
 import {Pagination, Image} from 'react-bootstrap';
-import InfiniteScroll from 'react-infinite-scroll-component';
 import {Link} from 'react-router';
 import Details from './details.jsx';
 import AppBar from 'material-ui/AppBar';
@@ -68,7 +67,7 @@ class SearchBar extends React.Component {
             content = <div>
                 {this.state.mList.map((details, i) => (
                     <section>
-                       <Link to="/details">
+                       <Link to={"details/"+details.imdbID} key={i}>
                         <Image src={details.Poster}/>
                         <h3>Title: {details.Title}</h3>
                         </Link>
@@ -92,10 +91,10 @@ class SearchBar extends React.Component {
             content = null;
         }
         return (
-            <div>
-             <AppBar
-              title="MovieFinder"
-             />
+              <div>
+              <AppBar
+                title="MovieFinder"
+              />
                 <TextField hintText="Type Movie Name Here" value={this.state.value} onChange={this.handleChange}/>
                 <RaisedButton label="Search" primary={true} style={style} onClick={this.ajaxCall}/>
                 {content}
