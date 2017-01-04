@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --hot --host 0.0.0.0",
-    "test": "gulp"
+    "test": "gulp lint"
   },
   "eslintConfig": {
         "env": {
