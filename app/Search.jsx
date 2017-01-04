@@ -35,12 +35,7 @@ import InfiniteScroll from 'react-infinite-scroll-component';const style = {
                console.log('There was an error fetching from API', error);
            }
        });    }
-   handleClick(event) {
-     let page=event.currentTarget.dataset.id;
-     this.setState({
-       currentPage:page
-     });
-     this.ajaxCall();
+   
    }    render() {
        let isSearch = this.state.search;
        let content = null;
