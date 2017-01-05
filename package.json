@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --hot --host 0.0.0.0",
-    "test": "gulp lint"
+    "start": "gulp && webpack-dev-server --hot --host 0.0.0.0"
   },
   "eslintConfig": {
     "env": {
