@@ -13,7 +13,7 @@ gulp.task('html', () => {
   return gulp.src('index.html')
             .pipe(htmllint({
               'rules': {
-                'indent-width': 2
+                'indent-width': 1
               }
             }
             ))
