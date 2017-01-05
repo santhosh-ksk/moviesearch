@@ -8,3 +8,15 @@ gulp.task('lint', () => {
             .pipe(eslint.format())
             .pipe(eslint.failAfterError());
 });
+gulp.task('html', () => {
+  return gulp.src('index.html')
+            .pipe(htmllint({
+              'rules': {
+                'indent-width': 2
+              }
+            }
+            ))
+            .pipe(htmllint.format())
+            .pipe(htmllint.failAfterError());
+});
+
