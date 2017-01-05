@@ -1,6 +1,7 @@
 var install = require("gulp-install");
 var gulp = require('gulp');
 var eslint= require('gulp-eslint');
+var htmllint= require('gulp-html-lint');
 
 gulp.task('lint', () => {
   return gulp.src('main.js')
