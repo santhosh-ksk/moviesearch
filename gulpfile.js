@@ -19,4 +19,7 @@ gulp.task('html', () => {
             .pipe(htmllint.format())
             .pipe(htmllint.failAfterError());
 });
+gulp.task('default', ['lint','html'], () => {
+  //run as default
+});
 
