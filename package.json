@@ -7,19 +7,20 @@
     "test": "gulp lint"
   },
   "eslintConfig": {
-        "env": {
-            "node": true,
-            "es6": true
-        }
+    "env": {
+      "node": true,
+      "es6": true
+    }
   },
   "author": "Gowtham",
   "license": "ISC",
   "dependencies": {
     "gulp-install": "^0.6.0",
     "react": "~15.4.1",
-    "react-dom": "~15.4.1",
-    "react-router": "^2.0.0",
     "react-bootstrap": "^0.30.7",
+    "react-dom": "~15.4.1",
+    "react-grid-system": "^2.2.0",
+    "react-router": "^2.0.0",
     "react-superagent": "^1.1.1",
     "superagent": "^3.3.1",
     "webpack": "^1.14.0",
