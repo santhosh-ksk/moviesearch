@@ -14,8 +14,10 @@
   "author": "Gowtham",
   "license": "ISC",
   "dependencies": {
+    "gulp-eslint": "^3.0.1",
     "gulp-html-lint": "0.0.1",
     "gulp-install": "^0.6.0",
+    "material-ui": "^0.16.6",
     "react": "~15.4.1",
     "react-bootstrap": "^0.30.7",
     "react-dom": "~15.4.1",
