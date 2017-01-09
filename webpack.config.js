@@ -1,8 +1,8 @@
-var config = {
+module.exports = {
    entry: './main.js',
 
    output: {
-      path:'./',
+      path: __dirname + '/',
       filename: 'index.js',
    },
 
@@ -12,12 +12,12 @@ var config = {
    },
 
    module: {
+
       loaders: [
          {
             test: /\.jsx?$/,
             exclude: /node_modules/,
             loader: 'babel',
-
             query: {
                presets: ['es2015', 'react']
             }
@@ -25,5 +25,3 @@ var config = {
       ]
    }
 }
-
-module.exports = config;
